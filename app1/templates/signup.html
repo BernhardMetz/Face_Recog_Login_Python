@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp System!</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <script src="../../static/js/jquery.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/tracking-min.js"></script>
+    <script src="../../static/js/data/face-min.js"></script>
+    <script src="../../static/js/signup.js"></script>
+
+</head>
+<body>
+        {% csrf_token %}
+<header>
+    <h1>Profile Signup Page</h1>
+</header>
+
+<div id="div1">
+    <div id="div1_1">
+        <h2>User, Password, Photos</h2>
+    </div>
+    <div id="div1_2">
+        <button>Kindly enter you info</button>
+    </div>
+    <div id="div1_3">
+        <input type="text" placeholder="User Name" id="user" required>
+    </div>
+    <div id="div1_4">
+        <input type="password" placeholder="Password" id="pass" required>
+    </div>
+
+    <div id="div1_5">
+        <input type="password" placeholder="Confirm Password" id="rpass" required>
+    </div>
+
+    <div id="div1_7">
+        <p id="photo">Please capture 5 photos of your own : front, left, right, up, down -- side</p>
+    </div>
+    <div id="div1_9">
+        <video id="video" width="320" height="240" preload autoplay loop muted></video>
+	    <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+    </div>
+    <div id="div1_10">
+        <button id="btn_capture">Capture</button>
+    </div>
+    <div id="div2">
+    </div>
+</div>
+
+<div id="div1_8">
+    <button id="btn_submit">Submit</button>
+</div>
+</body>
+</html>
